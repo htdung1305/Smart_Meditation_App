@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Smart Meditation</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="abcdefg">Enter your username or Email</string>
+    <string name="saosao">Enter your password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign up</string>
+    <string name="login">Login</string>
+    <string name="Phone">Phone</string>
+    <string name="Hint">012345678xx</string>
+    <string name="creatnewacc">Create your account</string>
+    <string name="emailinstead">Use email instead</string>
+    <string name="dateofbirth">Date of birth</string>
+    <string name="policy">This will not be shown publicly. Confirm your own age</string>
+    <string name="next">NEXT</string>
+    <string name="repassword">Re-Password</string>
+    <string name="repass">Enter your password again</string>
+    <string name="scantext">Hãy scan mặt của bạn</string>
+    <string name="modify">chúng tôi sẽ sử dụng khuôn mặt của bạn để cải thiện quá trình trải nghiệm khi thiền của bạn</string>
+    <string name="scanbox_button_description" > Scan here</string>
+    <string name="month">Month</string>
+    <string name="day">Day</string>
+    <string name="year">Year</string>
+    >
+</resources>

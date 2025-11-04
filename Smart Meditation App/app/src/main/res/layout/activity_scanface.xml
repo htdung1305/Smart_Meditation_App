@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A468E"
+    tools:context=".Scanface">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp"
+        android:src="@drawable/meditation_logo" />
+
+    <Button
+        android:id="@+id/scanbox_button"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="@string/scanbox_button_description"
+        android:padding="95dp"
+        android:drawableTop="@drawable/camera"
+        />
+    <ImageView
+        android:id="@+id/faceicon"
+        android:layout_width="59dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/scanbox_button"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/faceicon"
+
+        />
+    <TextView
+        android:id="@+id/scan_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_below="@id/faceicon"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="@string/scantext"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/modify_scan_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_below="@id/scan_text"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="@string/modify"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:gravity="center" />
+    <ImageView
+        android:id="@+id/step"
+        android:layout_width="325dp"
+        android:layout_height="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/modify_scan_text"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/step"
+
+        />
+
+    <ImageView
+        android:id="@+id/captured_image"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_below="@id/scanbox_button"
+        android:layout_marginTop="-270dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background"
+        android:scaleType="fitCenter" />
+
+
+</RelativeLayout>

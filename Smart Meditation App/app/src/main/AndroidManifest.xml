@@ -1,0 +1,69 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/> <!-- Optional: Uncomment if needed -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+
+    <!-- Features -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+
+        <!-- MainActivity definition -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"> <!-- Launcher activities must be exported -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- LogIn definition -->
+        <activity
+            android:name=".LogIn"
+            android:exported="false"/> <!-- Exported set to false by default -->
+
+        <!-- SignUp definition -->
+        <activity
+            android:name=".SignUp"
+            android:exported="true"/> <!-- Set to true if accessible externally -->
+
+        <!-- SetupPassword Activity definition -->
+        <activity
+            android:name=".SetupPassword"
+            android:exported="false"/> <!-- Keep non-exported unless required -->
+
+        <!-- Scanface Activity definition -->
+        <activity
+            android:name=".Scanface"
+            android:exported="false"/> <!-- Set exported to true if needed -->
+
+        <!-- FaceVerification Activity definition -->
+        <activity android:name=".FaceVerification"
+            android:exported="true"/>
+
+
+    </application>
+
+    <!-- Queries declaration for Android 11 and higher -->
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <!-- Add more intents here if your app needs to query other activities -->
+    </queries>
+
+</manifest>

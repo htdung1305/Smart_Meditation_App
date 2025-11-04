@@ -1,0 +1,202 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A468E"
+    tools:context=".LogIn">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp"
+        android:src="@drawable/meditation_logo" />
+
+    <TextView
+        android:id="@+id/creatnewacc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="190dp"
+        android:fontFamily="@font/mn_reg"
+        android:text="@string/creatnewacc"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="230dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="@string/username"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/box_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/abcdefg"
+        android:padding="15dp"
+        android:background="@drawable/button_background"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/box_username"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="@string/Phone"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/box_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_number"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/Hint"
+        android:padding="15dp"
+        android:background="@drawable/button_background"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+    <TextView
+        android:layout_below="@id/box_phone"
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/emailinstead"
+        android:fontFamily="@font/inter_regular"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF" />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/email"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/mn_reg"
+        android:text="@string/dateofbirth"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/policy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/date"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="@string/policy"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+    <ImageView
+        android:id="@+id/month"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/policy"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/month_date" />
+
+    <!-- Label for Month Spinner -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/policy"
+        android:layout_marginTop="10dp"
+        android:text="@string/month"
+        android:textColor="#FFFFFF"
+        android:layout_marginStart="144dp"
+
+        />
+
+
+    <!-- Label for Day Spinner -->
+    <Spinner
+        android:id="@+id/spinner_month"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/policy"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="36dp"
+        android:background="#FFFFFF"
+        android:padding="15dp"
+        android:spinnerMode="dropdown"
+        android:popupBackground="@drawable/spinner_background"
+        />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day"
+            android:textColor="@color/black"
+            android:paddingStart="16dp"
+            android:paddingEnd="8dp" />
+
+        <Spinner
+            android:id="@+id/spinner_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:spinnerMode="dropdown"/>
+
+        <!-- Label for Year Spinner -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:textColor="@color/black"
+            android:paddingStart="16dp"
+            android:paddingEnd="8dp" />
+
+        <Spinner
+            android:id="@+id/spinner_year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:spinnerMode="dropdown"/>
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="118dp"
+        android:layout_height="51dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/box_phone"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/button_background"
+        android:text="@string/next"
+        android:fontFamily="@font/mn_reg"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:paddingTop="-5dp"
+        />
+
+</RelativeLayout>
