@@ -53,10 +53,10 @@ git clone https://github.com/dainsd382/Smart_Meditation_App.git
 ### Bước 3: Thiết lập máy ảo hoặc thiết bị Android
 - Tạo một máy ảo trên Android Studio hoặc kết nối trực tiếp với thiết bị Android của bạn để trải nghiệm ứng dụng.
 
-![Set up Emulator](link-to-your-emulator-image)  <!-- Thay link-to-your-emulator-image bằng URL của hình ảnh minh họa cho việc thiết lập máy ảo -->
+![Set up Emulator](./Image_Source/Open_Project)  <!-- Thay link-to-your-emulator-image bằng URL của hình ảnh minh họa cho việc thiết lập máy ảo -->
 
 ### Liên hệ
-Nếu bạn có bất kỳ câu hỏi nào về dự án, hãy liên hệ với chúng tôi qua email: [nguyenducdai382@gmail.com](mailto:nguyenducdai382@gmail.com)
+Nếu bạn có bất kỳ câu hỏi nào về dự án, hãy liên hệ với chúng tôi qua email: [htdung13052002@gmail.com](mailto:htdung13052002@gmail.com)
 
 ### Hướng dẫn thêm hình ảnh
 - **Logo**: Thay `link-to-your-logo-image` bằng URL đến hình ảnh logo ứng dụng của bạn.
