@@ -41,7 +41,7 @@ Dự án được chia thành 4 phần chính:
 ### Bước 1: Clone repository
 Clone repository về máy hoặc tải xuống file zip:
 ```bash
-git clone https://github.com/dainsd382/Smart_Meditation_App.git
+git clone https://github.com/htdung1305/Smart_Meditation_App.git
 ```
 
 ### Bước 2: Mở ứng dụng trong Android Studio
